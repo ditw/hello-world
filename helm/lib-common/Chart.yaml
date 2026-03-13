@@ -1,0 +1,6 @@
+apiVersion: v2
+name: lib-common
+description: A common library chart providing shared templates for all services
+type: library
+version: 0.1.0
+appVersion: "1.0.0"

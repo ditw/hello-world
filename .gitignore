@@ -1,0 +1,11 @@
+# Helm build artifacts
+charts/
+*.tgz
+
+# Helm dependency lock file
+Chart.lock
+
+# IDE/editor files
+.vscode/
+.idea/
+*.swp
