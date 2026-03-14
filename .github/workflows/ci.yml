@@ -1,4 +1,4 @@
-name: CI-Go-Hello-World
+name: Hello-World-CI
 
 on:
   push:
@@ -20,13 +20,13 @@ jobs:
           version: v3.14.0
 
       - name: Build Helm dependencies
-        run: helm dependency build ./helm/lib-common
+        run: helm dependency build ./helm/hello-world
 
       - name: Lint Helm chart
-        run: helm lint ./helm/lib-common
+        run: helm lint ./helm/hello-world
 
       - name: Render Helm chart
-        run: helm template lib-common ./helm/lib-common
+        run: helm template hello-world ./helm/hello-world
 
   dockerfile-lint:
     name: Lint Dockerfile
