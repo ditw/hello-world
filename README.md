@@ -101,3 +101,5 @@ From the Terminal, run the below commands:
 * [Docker Desktop Installation](https://docs.docker.com/desktop/)
 * [Helm Chart Installation](https://github.com/helm/helm/releases)
 * [Haskell Dockerfile Linter](https://github.com/hadolint/hadolint)
+* [ca-certificates package details for Alpine v3.19](https://pkgs.alpinelinux.org/package/v3.19/main/x86/ca-certificates)
+* [git package details for Alpine v3.19](https://pkgs.alpinelinux.org/package/v3.19/main/x86/git)
