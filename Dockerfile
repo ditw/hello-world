@@ -5,7 +5,7 @@ FROM golang:1.22-alpine AS builder
 WORKDIR /app
 
 # Install build tools
-RUN apk add --no-cache git
+RUN apk add --no-cache git=2.43.7-r0
 
 # Copy go.mod (for caching dependencies)
 COPY app/go.mod ./
@@ -21,7 +21,7 @@ RUN CGO_ENABLED=0 GOOS=linux go build -o hello-world .
 FROM alpine:3.19
 
 # Add CA certificates for HTTPS requests (if required)
-RUN apk add --no-cache ca-certificates
+RUN apk add --no-cache ca-certificates=20250911-r0
 
 # Create a non-root user and group
 RUN addgroup -S appgroup && adduser -S appuser -G appgroup
