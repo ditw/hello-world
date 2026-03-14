@@ -26,7 +26,7 @@ jobs:
         run: helm lint ./helm/hello-world
 
       - name: Render Helm chart
-        run: helm template hello-world ./helm/hello-world
+        run: helm template go ./helm/hello-world
 
   dockerfile-lint:
     name: Lint Dockerfile
